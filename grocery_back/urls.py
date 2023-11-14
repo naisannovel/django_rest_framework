@@ -1,0 +1,8 @@
+from django.contrib import admin
+from django.urls import path, include
+
+urlpatterns = [
+    path('user/', include('user.urls')),
+    path('product/', include('product.urls')),
+    path('category/', include('category.urls')),
+]
